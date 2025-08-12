@@ -1,0 +1,140 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.app-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header */
+.app-header {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0a2540;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* File input */
+.upload-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.upload-section input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+
+.upload-section input[type="file"]:focus,
+.upload-section input[type="file"]:hover {
+  border-color: #3a86ff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background-color: #3a86ff;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgb(58 134 255 / 0.45);
+}
+
+button:hover,
+button:focus {
+  background-color: #265fdd;
+  outline: none;
+  box-shadow: 0 6px 18px rgb(38 95 221 / 0.6);
+}
+
+/* Textarea for Q&A */
+textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  resize: vertical;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.25s ease;
+  color: #222;
+}
+
+textarea:focus {
+  border-color: #3a86ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(58, 134, 255, 0.6);
+}
+
+/* Question input */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1.5px solid #ccc;
+  transition: border-color 0.25s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+input[type="text"]:focus {
+  border-color: #3a86ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(58, 134, 255, 0.6);
+}
+
+/* Response box */
+.response-box {
+  background-color: #f0f4ff;
+  border-left: 6px solid #3a86ff;
+  padding: 1rem 1.2rem;
+  border-radius: 7px;
+  color: #1c1c1c;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  min-height: 140px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 1.5rem 1.8rem;
+    margin: 1.5rem;
+  }
+}
